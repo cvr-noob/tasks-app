@@ -1,0 +1,11 @@
+<p>add-task works!</p>
+
+<form (ngSubmit)="addTask()">
+    <input type="text" [(ngModel)]="taskName" name="task" />
+    <button type="submit">Submit</button>
+</form>
+
+<li *ngFor="let item of items; index as i">
+   {{i}} - {{item}}
+</li>
+{{1+2}}
